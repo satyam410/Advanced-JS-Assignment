@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="problem1.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+        <div class="calculator-grid">
+        <div class="output">
+            <input type='text' id='history' placeholder="0" class="previous-screen">
+            <input type='text' id='result' placeholder="0" class="current-screen" >
+        </div>
+        
+
+        <input type="button"  value="Del" onclick="deleteText()" class="clear span-two"  ></input>
+        <input type='button' value='AC' onclick="clearScreen()" class="clear" />
+        <input type="button" value="÷" class="button" onclick="displayKeys('/')"></input>
+        
+        <input type="button" value="1" class="button " onclick="display('1')"></input>
+        
+        <input type="button" value="2" class="button" onclick="display('2')"></input>
+        
+        <input type="button" value="3" class="operator" onclick="display('3')"></input>
+        
+        <input type="button" value="*" class="button" onclick="displayKeys('*')"></input>
+        
+        <input type="button" value="4" class="button" onclick="display('4')"></input>
+        
+        <input type="button" value="5" class="button" onclick="display('5')"></input>
+        
+        <input type="button" value="6" class="operator" onclick="display('6')"></input>
+        
+        <input type="button" value="+" class="button" onclick="displayKeys('+')"></input>
+        
+        <input type="button" value="7" class="button" onclick="display('7')"></input>
+        
+        <input type="button" value="8" class="button" onclick="display('8')"></input>
+        
+        <input type="button" value="9" class="operator" onclick="display('9')"></input>
+        
+        <input type="button" value="-" class="button" onclick="displayKeys('-')"></input>
+        
+        <input type="button" value="." class="button" onclick="displayKeys('.')"></input>
+        
+        
+        <input type="button" value="0" class="operator" onclick="display('0')"></input>
+         <input type="button" value="=" class="span-two" onclick="solve()"></input>
+        
+        
+
+    </div>
+    <script src="problem1.js"></script>
+</body>
+</html>

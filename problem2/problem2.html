@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="problem2.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="tip-calculator">
+      <h1>Tip Calculator</h1>
+        <form id="form">
+          <label for="bill" class="h3">
+            Bill: $
+            <input type="number" min="0" step="0.01" value="" name="bill" id="bill" />
+          </label>
+        
+        
+          <label for="percentage" class="h3">
+            Tip percentage :
+          <input type="range" name="rangeInput" min="0" max="100" step="1" oninput="updateTextInput(this.value);">
+          <output name="amount" id="amount" for="rangeInput">0 %</output>
+          </label>
+        </form>
+      
+      <h2>Result</h2>
+        <label for="Tip" class="h3">
+          Tip Amount: $
+          <input type="number" min="0" step="0.01" value="" name="tip" id="tipAmt" />
+        </label>
+        <label for="bill" class="h3">
+          Total Bill: $
+          <input type="number" min="0" step="0.01" value="" name="bill" id="billAmt" />
+        </label>
+
+    </div>
+    <script src="problem2.js"></script>
+</body>
+</html>
